@@ -1,0 +1,36 @@
+# Credentials and secrets
+*.env
+*credentials*
+.netapp-credentials
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+/tmp/
+
+# Build artifacts
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Dependencies
+node_modules/
+venv/
+env/
+
+# Test outputs
+test-output/
+*.out

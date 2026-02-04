@@ -1,0 +1,27 @@
+# Example New Relic Flex Integration Configuration for NetApp ONTAP
+# Copy this file to /etc/newrelic-infra/integrations.d/flex-netapp.yml
+
+integrations:
+  - name: nri-flex
+    config:
+      name: netAppSample
+      apis:
+        # Volume metrics collection
+        - name: NetAppVol
+          commands:
+            - run: /etc/newrelic-infra/integrations.d/NAVol.sh
+        
+        # Cluster configuration and status
+        - name: NetAppCluster
+          commands:
+            - run: /etc/newrelic-infra/integrations.d/NACluster.sh
+        
+        # Disk inventory and health
+        - name: NetAppDisk
+          commands:
+            - run: /etc/newrelic-infra/integrations.d/NADisk.sh
+        
+        # Node health and performance
+        - name: NetAppNode
+          commands:
+            - run: /etc/newrelic-infra/integrations.d/NANode.sh
