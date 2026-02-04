@@ -1,0 +1,12 @@
+name: com.newrelic.NetAppScraper
+description: Reports metrics from Morningstar's perl script output files
+protocol_version: 2
+os: linux
+
+commands:
+  metrics:
+    command:
+      - python 
+      - ./NetAppScraper.py
+      - /home/NewRelic/output/
+    interval: 30

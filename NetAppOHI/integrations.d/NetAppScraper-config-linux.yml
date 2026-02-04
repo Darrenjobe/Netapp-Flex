@@ -1,0 +1,7 @@
+integration_name: com.newrelic.NetAppScraper
+
+instances:
+  - name: com.newrelic.NetAppScraper
+    command: metrics
+    labels:
+      environment: development
