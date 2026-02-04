@@ -1,0 +1,20 @@
+integrations:
+ - name: nri-flex
+   config:
+     name: cvoSample
+     apis:
+       - name: NetAppVol
+         commands:
+          - run: /etc/newrelic-infra/integrations.d/NAVol.sh
+       
+       - name: NetAppCluster
+         commands:
+          - run: /etc/newrelic-infra/integrations.d/NACluster.sh
+       
+       - name: NetAppDisk
+         commands:
+          - run: /etc/newrelic-infra/integrations.d/NADisk.sh
+
+       - name: NetAppNode
+         commands:
+          - run: /etc/newrelic-infra/integrations.d/NANode.sh
